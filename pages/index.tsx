@@ -12,7 +12,7 @@ export default function Home() {
       <Head>
         <title>David Tito</title>
         <meta name="David Tito" content="Film Marker" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/logo.ico" />
       </Head>
 
       <main className="">
