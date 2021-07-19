@@ -4,7 +4,7 @@ import NewNavbar from "./NewNavbar";
 
 const Layout = ({ children }) => {
   return (
-    <div className="w-screen">
+    <div className="">
       <NewNavbar />
       {children}
       <Footer />
