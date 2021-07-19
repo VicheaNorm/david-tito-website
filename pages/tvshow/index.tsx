@@ -1,3 +1,4 @@
+import { Card } from "antd";
 import Head from "next/head";
 import React from "react";
 
@@ -20,18 +21,20 @@ const index = () => {
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
       <div className="container mx-auto">
-        <h1>TV SHOW Page</h1>
-        <div className="grid grid-cols-3 mx-auto">
+        <h1 className="text-gray-400 p-6 text-3xl">TV SHOW Page</h1>
+        <div className="grid grid-cols-1 md:grid-cols-3 mx-auto ">
           {data.map((datas) => (
-            <div className="">
+            <Card className=" p-4">
               <iframe
-                width="500"
-                height="333"
+                className="bg-gray-200 rounded-lg p-2 shadow-sm"
+                width="100%"
+                height="400"
                 src={datas.linkURL}
                 title="YouTube video player"
+                allowFullScreen
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               ></iframe>
-            </div>
+            </Card>
           ))}
         </div>
       </div>
