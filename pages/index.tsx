@@ -5,6 +5,8 @@ import Work from "../component/Work";
 import ContactUs from "../component/Contact-us";
 import { BackTop } from "antd";
 import { Fragment } from "react";
+import NewNavbar from "../component/NewNavbar";
+import Footer from "../component/footer";
 
 export default function Home() {
   return (
@@ -15,7 +17,7 @@ export default function Home() {
         <link rel="icon" href="/logo.ico" />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
-
+      <NewNavbar />
       <main className="">
         <div className="">
           <div className="max-h-full w-auto " id="bio">
@@ -30,6 +32,7 @@ export default function Home() {
           </div>
         </div>
       </main>
+      <Footer />
     </Fragment>
   );
 }
