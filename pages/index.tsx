@@ -17,7 +17,7 @@ export default function Home() {
         <link rel="icon" href="/logo.ico" />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
-      <NewNavbar />
+
       <main className="">
         <div className="">
           <div className="max-h-full w-auto " id="bio">
