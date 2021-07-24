@@ -7,25 +7,25 @@ const Work = () => {
     {
       link: "/creative-page",
       title: "Creative",
-      imageURL: "/creative-image/30.jpg",
+      imageURL: "z6qdg9d49",
       text: "Fingerstache flexitarian street art 8-bit waistcoat.Distillery hexagon disrupt edison bulbche.",
     },
     {
       link: "/tvshow",
       title: "TV Show",
-      imageURL: "/creative-image/44.jpg",
+      imageURL: "4h33qg29g",
       text: "Fingerstache flexitarian street art 8-bit waistcoat.Distillery hexagon disrupt edison bulbche.",
     },
     {
       link: "/ngo",
       title: "NGO",
-      imageURL: "/creative-image/2.jpg",
+      imageURL: "bahfcdv3x",
       text: "Fingerstache flexitarian street art 8-bit waistcoat.Distillery hexagon disrupt edison bulbche.",
     },
   ];
   return (
     <section className="text-gray-600 body-font sm:pt-20">
-      <div className="container px-5 py-24 mx-auto">
+      <div className="px-5 py-24">
         <div className="flex flex-wrap w-full mb-0">
           <div className="lg:w-1/2 w-full mb-6 lg:mb-0">
             <h1 className="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-400">
@@ -38,9 +38,9 @@ const Work = () => {
             have been working with 019 MV as well as Sai …)
           </p> */}
         </div>
-        <div className="grid md:grid-cols-3 -m-4">
+        <div className="grid md:grid-cols-3 md:py-6">
           {data.map((datas) => (
-            <div className="p-4">
+            <div>
               <LinkTo href={datas.link}>
                 <a>
                   <motion.div
@@ -52,7 +52,9 @@ const Work = () => {
                   >
                     <img
                       className="h-60 rounded w-full object-cover object-center mb-6"
-                      src={datas.imageURL}
+                      src={
+                        "https://files.fm/thumb_show.php?i=" + datas.imageURL
+                      }
                       alt="content"
                     />
                     <h2 className="text-lg text-gray-400 font-medium title-font mb-4">
