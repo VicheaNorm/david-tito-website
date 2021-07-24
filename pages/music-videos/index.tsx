@@ -1,38 +1,24 @@
+import ArrowLeftIcon from "@material-ui/icons/ArrowLeft";
 import { Card } from "antd";
 import Head from "next/head";
 import React from "react";
 import Link from "next/link";
-import ArrowLeftIcon from "@material-ui/icons/ArrowLeft";
 import Feature from "../../component/Feature/Feature";
-import { motion } from "framer-motion";
 const index = () => {
   const data = [
-    { linkURL: "mmmSDsBGDBg" },
-    { linkURL: "mmmSDsBGDBg" },
-    { linkURL: "mmmSDsBGDBg" },
+    { linkURL: "ZltTF9zNI6w" },
+    { linkURL: "0jMkt96IzBI" },
+    { linkURL: "uHeqfhLww4A" },
+    { linkURL: "qgWVlC-K89o" },
+    { linkURL: "uSQiGf12Gm4" },
+    { linkURL: "2eE3DFrlvsY" },
   ];
-
-  const dataImage = [
-    {
-      imageURL: "mxtnht6rk",
-    },
-    {
-      imageURL: "z5x6dugwk",
-    },
-    {
-      imageURL: "c4mwbrgmm",
-    },
-    {
-      imageURL: "et369md4r",
-    },
-  ];
-
   return (
     <>
       <Head>
-        <title>TV SHOW</title>
-        <meta name="description" content="Creative" />
-        <meta property="og:title" content="Creative" />
+        <title>Musics | Videos</title>
+        <meta name="description" content="Musics and Videos" />
+        <meta property="og:title" content="Musics and Videos" />
         <link rel="icon" href="/logo.ico" />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
@@ -52,7 +38,7 @@ const index = () => {
               </a>
             </Link>
             <Link href="/music-videos">
-              <a className="mr-5 hover:text-gray-200 cursor-pointer">
+              <a className="mr-5 hover:text-gray-200 cursor-pointer  font-semibold text-red-400 ">
                 Music Video
               </a>
             </Link>
@@ -62,18 +48,15 @@ const index = () => {
               </a>
             </Link>
             <Link href="/runwithsai-series">
-              <a className="mr-5 hover:text-gray-200 cursor-pointer ">
+              <a className="mr-5 hover:text-gray-200 cursor-pointer">
                 RUN WITH SAI Series
               </a>
             </Link>
             <Link href="/tvshow">
-              <a className="mr-5 hover:text-gray-200 cursor-pointer  font-semibold text-red-400">
-                TV Show
-              </a>
+              <a className="mr-5 hover:text-gray-200 cursor-pointer">TV Show</a>
             </Link>
           </nav>
         </div>
-
         <div className="grid grid-cols-1 md:grid-cols-3 mx-auto ">
           {data.map((datas) => (
             <Card className=" p-4">
@@ -86,23 +69,6 @@ const index = () => {
                 allowFullScreen
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               ></iframe>
-            </Card>
-          ))}
-        </div>
-        <div className="grid md:grid-cols-4 lg:grid-cols-4 grid-cols-2">
-          {dataImage.map((datas, keys) => (
-            <Card className="p-4" key={keys}>
-              <div className="h-full flex flex-col items-center text-center">
-                <motion.img
-                  whileHover={{
-                    scale: 1.15,
-                    transition: { duration: 0.2 },
-                  }}
-                  alt={"Images-Id-" + keys}
-                  className="flex-shrink-0 rounded-lg w-full h-60 object-cover object-center mb-4"
-                  src={"https://files.fm/thumb_show.php?i=" + datas.imageURL}
-                />
-              </div>
             </Card>
           ))}
         </div>

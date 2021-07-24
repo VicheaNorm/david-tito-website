@@ -5,21 +5,33 @@ import { motion } from "framer-motion";
 const Work = () => {
   const data = [
     {
-      link: "/creative-page",
-      title: "Creative",
+      link: "/shortfilm",
+      title: "Short Film",
       imageURL: "z6qdg9d49",
+      text: "Fingerstache flexitarian street art 8-bit waistcoat.Distillery hexagon disrupt edison bulbche.",
+    },
+    {
+      link: "/music-videos",
+      title: "Music Video",
+      imageURL: "et369md4r",
+      text: "Fingerstache flexitarian street art 8-bit waistcoat.Distillery hexagon disrupt edison bulbche.",
+    },
+    {
+      link: "/commercial",
+      title: "Commercial      ",
+      imageURL: "bahfcdv3x",
+      text: "Fingerstache flexitarian street art 8-bit waistcoat.Distillery hexagon disrupt edison bulbche.",
+    },
+    {
+      link: "/runwithsai-series",
+      title: "RUN WITH SAI Series",
+      imageURL: "ksh3u38aq",
       text: "Fingerstache flexitarian street art 8-bit waistcoat.Distillery hexagon disrupt edison bulbche.",
     },
     {
       link: "/tvshow",
       title: "TV Show",
       imageURL: "4h33qg29g",
-      text: "Fingerstache flexitarian street art 8-bit waistcoat.Distillery hexagon disrupt edison bulbche.",
-    },
-    {
-      link: "/ngo",
-      title: "NGO",
-      imageURL: "bahfcdv3x",
       text: "Fingerstache flexitarian street art 8-bit waistcoat.Distillery hexagon disrupt edison bulbche.",
     },
   ];
@@ -40,7 +52,7 @@ const Work = () => {
         </div>
         <div className="grid md:grid-cols-3 md:py-6">
           {data.map((datas) => (
-            <div>
+            <div className="p-4">
               <LinkTo href={datas.link}>
                 <a>
                   <motion.div
@@ -57,10 +69,10 @@ const Work = () => {
                       }
                       alt="content"
                     />
-                    <h2 className="text-lg text-gray-400 font-medium title-font mb-4">
+                    <h2 className="text-lg text-gray-400 font-medium title-font">
                       {datas.title}
                     </h2>
-                    <p className="leading-relaxed text-base">{datas.text}</p>
+                    {/* <p className="leading-relaxed text-base">{datas.text}</p> */}
                   </motion.div>
                 </a>
               </LinkTo>

@@ -1,38 +1,24 @@
+import ArrowLeftIcon from "@material-ui/icons/ArrowLeft";
 import { Card } from "antd";
 import Head from "next/head";
 import React from "react";
 import Link from "next/link";
-import ArrowLeftIcon from "@material-ui/icons/ArrowLeft";
 import Feature from "../../component/Feature/Feature";
-import { motion } from "framer-motion";
-const index = () => {
+const indexCreativePage = () => {
   const data = [
-    { linkURL: "mmmSDsBGDBg" },
-    { linkURL: "mmmSDsBGDBg" },
-    { linkURL: "mmmSDsBGDBg" },
+    { linkURL: "baelvxWBj20" },
+    { linkURL: "6NmO3try_m8" },
+    { linkURL: "baelvxWBj20" },
+    { linkURL: "baelvxWBj20" },
+    { linkURL: "baelvxWBj20" },
+    { linkURL: "baelvxWBj20" },
   ];
-
-  const dataImage = [
-    {
-      imageURL: "mxtnht6rk",
-    },
-    {
-      imageURL: "z5x6dugwk",
-    },
-    {
-      imageURL: "c4mwbrgmm",
-    },
-    {
-      imageURL: "et369md4r",
-    },
-  ];
-
   return (
     <>
       <Head>
-        <title>TV SHOW</title>
-        <meta name="description" content="Creative" />
-        <meta property="og:title" content="Creative" />
+        <title>Short Film</title>
+        <meta name="description" content="Short Film" />
+        <meta property="og:title" content="Short Film" />
         <link rel="icon" href="/logo.ico" />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
@@ -47,7 +33,7 @@ const index = () => {
 
           <nav className="md:mr-auto text-gray-200 md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-400	flex flex-wrap items-center text-base justify-center">
             <Link href="/shortfilm">
-              <a className="mr-5 hover:text-gray-200 cursor-pointer">
+              <a className="mr-5 hover:text-gray-200 cursor-pointer  font-semibold text-red-400">
                 Short Film
               </a>
             </Link>
@@ -67,9 +53,7 @@ const index = () => {
               </a>
             </Link>
             <Link href="/tvshow">
-              <a className="mr-5 hover:text-gray-200 cursor-pointer  font-semibold text-red-400">
-                TV Show
-              </a>
+              <a className="mr-5 hover:text-gray-200 cursor-pointer">TV Show</a>
             </Link>
           </nav>
         </div>
@@ -89,27 +73,10 @@ const index = () => {
             </Card>
           ))}
         </div>
-        <div className="grid md:grid-cols-4 lg:grid-cols-4 grid-cols-2">
-          {dataImage.map((datas, keys) => (
-            <Card className="p-4" key={keys}>
-              <div className="h-full flex flex-col items-center text-center">
-                <motion.img
-                  whileHover={{
-                    scale: 1.15,
-                    transition: { duration: 0.2 },
-                  }}
-                  alt={"Images-Id-" + keys}
-                  className="flex-shrink-0 rounded-lg w-full h-60 object-cover object-center mb-4"
-                  src={"https://files.fm/thumb_show.php?i=" + datas.imageURL}
-                />
-              </div>
-            </Card>
-          ))}
-        </div>
       </div>
       <Feature />
     </>
   );
 };
 
-export default index;
+export default indexCreativePage;
