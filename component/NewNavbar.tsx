@@ -44,7 +44,7 @@ const NewNavbar = () => {
                 </a>
               </LinkTo>
             </li>
-            <li>
+            {/* <li>
               <LinkTo href="/about">
                 <a
                   aria-label="Product pricing"
@@ -54,7 +54,7 @@ const NewNavbar = () => {
                   About
                 </a>
               </LinkTo>
-            </li>
+            </li> */}
             {/* <li>
               <a
                 href="/"
@@ -173,7 +173,7 @@ const NewNavbar = () => {
                         </a>
                       </LinkTo>
                     </li>
-                    <li>
+                    {/* <li>
                       <LinkTo href="/about">
                         <a
                           aria-label="Product pricing"
@@ -183,7 +183,7 @@ const NewNavbar = () => {
                           About
                         </a>
                       </LinkTo>
-                    </li>
+                    </li> */}
                     {/* <li>
                       <a
                         href="/"

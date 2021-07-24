@@ -1,12 +1,14 @@
 import Head from "next/head";
-// import styles from "../styles/Home.module.css";
+
 import ContactImage from "../component/Contact-Image";
 import Work from "../component/Work";
 import ContactUs from "../component/Contact-us";
-import { BackTop } from "antd";
+
 import { Fragment } from "react";
-import NewNavbar from "../component/NewNavbar";
+
 import Footer from "../component/footer";
+import ContentSection from "../component/ContentSection";
+import Feature from "../component/Feature/Feature";
 
 export default function Home() {
   return (
@@ -20,19 +22,16 @@ export default function Home() {
 
       <main className="">
         <div className="">
-          <div className="max-h-full w-auto " id="bio">
+          <div className="" id="bio">
             <ContactImage />
+            {/* <ContentSection /> */}
           </div>
           <div className="" id="work">
             <Work />
-          </div>
-
-          <div className="" id="contact">
-            <ContactUs />
+            <Feature />
           </div>
         </div>
       </main>
-      <Footer />
     </Fragment>
   );
 }

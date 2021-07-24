@@ -1,11 +1,19 @@
+import { Card } from "antd";
 import { motion } from "framer-motion";
 import Head from "next/head";
 import React from "react";
+import Feature from "../component/Feature/Feature";
 
 const Creative = () => {
   const data = [
     {
       imageURL: "/creative-image/1.jpg",
+    },
+    {
+      imageURL: "/creative-image/2.jpg",
+    },
+    {
+      imageURL: "/creative-image/3.jpg",
     },
     {
       imageURL: "/creative-image/4.jpg",
@@ -85,6 +93,63 @@ const Creative = () => {
     {
       imageURL: "/creative-image/29.jpg",
     },
+    {
+      imageURL: "/creative-image/30.jpg",
+    },
+    {
+      imageURL: "/creative-image/31.jpg",
+    },
+    {
+      imageURL: "/creative-image/32.jpg",
+    },
+    {
+      imageURL: "/creative-image/33.jpg",
+    },
+    {
+      imageURL: "/creative-image/34.jpg",
+    },
+    {
+      imageURL: "/creative-image/35.jpg",
+    },
+    {
+      imageURL: "/creative-image/36.jpg",
+    },
+    {
+      imageURL: "/creative-image/37.jpg",
+    },
+    {
+      imageURL: "/creative-image/38.jpg",
+    },
+    {
+      imageURL: "/creative-image/39.jpg",
+    },
+    {
+      imageURL: "/creative-image/40.jpg",
+    },
+    {
+      imageURL: "/creative-image/41.jpg",
+    },
+    {
+      imageURL: "/creative-image/42.jpg",
+    },
+    {
+      imageURL: "/creative-image/43.jpg",
+    },
+    {
+      imageURL: "/creative-image/44.jpg",
+    },
+    {
+      imageURL: "/creative-image/45.jpg",
+    },
+    {
+      imageURL: "/creative-image/46.jpg",
+    },
+    {
+      imageURL: "/creative-image/48.jpg",
+    },
+    {
+      imageURL: "/creative-image/49.jpg",
+    },
   ];
   return (
     <>
@@ -103,14 +168,14 @@ const Creative = () => {
               My Creative
             </h1>
             <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
-              Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical
-              gentrify, subway tile poke farm-to-table. Franzen you probably
-              haven't heard of them.
+              All my works and projects behind the scenes.
+              <br />
+              This is a bonus, I also did a few TV shows as a Director
             </p>
           </div>
           <div className="grid md:grid-cols-4 lg:grid-cols-5 grid-cols-2">
             {data.map((datas) => (
-              <div className="p-4">
+              <Card className="p-4">
                 <div className="h-full flex flex-col items-center text-center">
                   <motion.img
                     whileHover={{
@@ -170,7 +235,7 @@ const Creative = () => {
                     </span>
                   </div> */}
                 </div>
-              </div>
+              </Card>
             ))}
 
             {/* <div className="p-4 lg:w-1/4 md:w-1/2">
@@ -346,6 +411,7 @@ const Creative = () => {
             </div> */}
           </div>
         </div>
+        <Feature />
       </section>
     </>
   );
