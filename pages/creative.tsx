@@ -147,6 +147,7 @@ const Creative = () => {
       </Head>
 
       <section className="text-gray-600 body-font">
+        <div className="" id="top" />
         <div className="container px-5 py-12 mx-auto">
           <div className="flex flex-col text-center w-full mb-20">
             <h1 className="text-4xl font-medium title-font mb-4 text-gray-400">
@@ -158,7 +159,12 @@ const Creative = () => {
               This is a bonus, I also did a few TV shows as a Director
             </p>
           </div>
-          <div className="grid md:grid-cols-4 lg:grid-cols-5 grid-cols-2">
+          <motion.div
+            initial={{ y: -300 }}
+            animate={{ y: 0 }}
+            transition={{ type: "spring" }}
+            className="grid md:grid-cols-4 lg:grid-cols-5 grid-cols-2"
+          >
             {data.map((datas, keys) => (
               <Card className="p-4" key={keys}>
                 <div className="h-full flex flex-col items-center text-center">
@@ -174,7 +180,7 @@ const Creative = () => {
                 </div>
               </Card>
             ))}
-          </div>
+          </motion.div>
         </div>
         <Feature />
       </section>

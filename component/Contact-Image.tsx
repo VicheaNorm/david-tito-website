@@ -7,7 +7,12 @@ const ContactImage = () => {
     <Fragment>
       <div className="grid grid-cols-1 md:grid-cols-2 w-screen px-4 ">
         <div className="items-center flex justify-center pt-10 sm:order-last">
-          <div className="lg:max-w-lg lg:pr-8 xl:pr-6">
+          <motion.div
+            initial={{ x: -300 }}
+            animate={{ x: 0 }}
+            transition={{ type: "spring" }}
+            className="lg:max-w-lg lg:pr-8 xl:pr-6"
+          >
             <motion.h2
               whileHover={{
                 scale: 1.05,
@@ -98,10 +103,13 @@ const ContactImage = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </motion.div>
         </div>
         <div className=" text-center md:ml-20 justify-center content-h pt-14 md:order-last">
-          <img
+          <motion.img
+            initial={{ x: 300 }}
+            animate={{ x: 0 }}
+            transition={{ type: "spring" }}
             className="object-scale-down w-full h-full rounded shadow-lg lg:rounded-none lg:shadow-none md:h-96 lg:h-full"
             src="/tito.png"
             alt="Content-image"

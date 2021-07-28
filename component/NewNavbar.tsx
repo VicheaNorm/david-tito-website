@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 const NewNavbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   return (
-    <div className="px-4 py-5 mx-auto  sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 bg-transparent sticky top-1">
+    <div className="px-4 py-5 mx-auto  sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 bg-transparent c">
       <div className="relative flex items-center justify-between">
         <div className="flex items-center">
           <a
@@ -68,7 +68,7 @@ const NewNavbar = () => {
         <ul className="items-center hidden space-x-8 lg:flex">
           <li>
             <Link to="contact" spy={true} smooth={true}>
-              <LinkTo href="/">
+              <LinkTo href="/contact">
                 <a
                   aria-label="Sign in"
                   title="Sign in"
@@ -197,7 +197,7 @@ const NewNavbar = () => {
                     <li>
                       <Link to="contact" spy={true} smooth={true}>
                         <a
-                          href="/"
+                          href="/contact"
                           aria-label="Sign in"
                           title="Sign in"
                           className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"

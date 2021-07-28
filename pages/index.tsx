@@ -22,7 +22,7 @@ export default function Home() {
 
       <main className="">
         <div className="">
-          <div className="" id="bio">
+          <div className="" id="top">
             <ContactImage />
             {/* <ContentSection /> */}
           </div>

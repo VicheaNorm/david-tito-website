@@ -2,6 +2,7 @@ import React from "react";
 
 import LinkTo from "next/link";
 import { motion } from "framer-motion";
+import { Card } from "antd";
 const Work = () => {
   const data = [
     {
@@ -36,8 +37,8 @@ const Work = () => {
     },
   ];
   return (
-    <section className="text-gray-600 body-font sm:pt-20">
-      <div className="px-5 py-24">
+    <section className="container mx-auto justify-center text-gray-600 body-font sm:pt-20">
+      <div className="px-2 py-4 ">
         <div className="flex flex-wrap w-full mb-0">
           <div className="lg:w-1/2 w-full mb-6 lg:mb-0">
             <h1 className="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-400">
@@ -52,31 +53,31 @@ const Work = () => {
         </div>
         <div className="grid md:grid-cols-3 md:py-6">
           {data.map((datas) => (
-            <div className="p-4">
+            <Card className="p-2">
               <LinkTo href={datas.link}>
-                <a>
+                <a className="hover:text-gray-200">
                   <motion.div
                     whileHover={{
                       scale: 1.05,
                       transition: { duration: 0.5 },
                     }}
-                    className="bg-gradient-to-r from-gray-900 p-6 rounded-lg"
+                    className="bg-gradient-to-r from-gray-800 to-gray-500 px-2 py-2 rounded-lg"
                   >
                     <img
-                      className="h-60 rounded w-full object-cover object-center mb-6"
+                      className="h-60 rounded w-full object-cover object-center mb-4"
                       src={
                         "https://files.fm/thumb_show.php?i=" + datas.imageURL
                       }
                       alt="content"
                     />
-                    <h2 className="text-lg text-gray-400 font-medium title-font">
+                    <h2 className="text-lg text-gray-400 font-medium title-font mb-2">
                       {datas.title}
                     </h2>
                     {/* <p className="leading-relaxed text-base">{datas.text}</p> */}
                   </motion.div>
                 </a>
               </LinkTo>
-            </div>
+            </Card>
           ))}
         </div>
       </div>
