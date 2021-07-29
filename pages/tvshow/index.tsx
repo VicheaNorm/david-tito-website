@@ -14,16 +14,37 @@ const index = () => {
 
   const dataImage = [
     {
-      imageURL: "mxtnht6rk",
+      imageURL: "nhwv3k9db",
     },
     {
-      imageURL: "z5x6dugwk",
+      imageURL: "whgw7dkuq",
     },
     {
-      imageURL: "c4mwbrgmm",
+      imageURL: "55a56sdu7",
     },
     {
-      imageURL: "et369md4r",
+      imageURL: "277wy9wyf",
+    },
+    {
+      imageURL: "p6fwf9eey",
+    },
+    {
+      imageURL: "nktqtvbfm",
+    },
+    {
+      imageURL: "3xnwfuasj",
+    },
+    {
+      imageURL: "43zwe9adx",
+    },
+    {
+      imageURL: "tuqp4r36w",
+    },
+    {
+      imageURL: "dkbry9rsj",
+    },
+    {
+      imageURL: "2xc5rxra8",
     },
   ];
 

@@ -9,10 +9,7 @@ const indexCreativePage = () => {
   const data = [
     { linkURL: "baelvxWBj20" },
     { linkURL: "6NmO3try_m8" },
-    { linkURL: "baelvxWBj20" },
-    { linkURL: "baelvxWBj20" },
-    { linkURL: "baelvxWBj20" },
-    { linkURL: "baelvxWBj20" },
+    { linkURL: "8CFreBPii1Y" },
   ];
   return (
     <>
@@ -23,7 +20,7 @@ const indexCreativePage = () => {
         <link rel="icon" href="/logo.ico" />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
-      <div className="" id="top"/>
+      <div className="" id="top" />
       <div className="container mx-auto px-4">
         <Link href="/">
           <a className="w-20 inline-flex cursor-pointer items-center bg-gray-100 border-0 py-1 px-2 text-center focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">
