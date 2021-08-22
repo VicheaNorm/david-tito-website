@@ -19,7 +19,7 @@ export default function Home() {
         <link rel="icon" href="/logo.ico" />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <meta property="og:title" content="David Tito"/>
-        <meta property="og:image" content="/tito.png"/>
+        <meta property="og:image" content="/1.png"/>
       </Head>
 
       <main className="">
