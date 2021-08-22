@@ -18,6 +18,8 @@ export default function Home() {
         <meta name="David Tito" content="Film Marker" />
         <link rel="icon" href="/logo.ico" />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <meta property="og:title" content="David Tito"/>
+        <meta property="og:image" content="/tito.png"/>
       </Head>
 
       <main className="">
