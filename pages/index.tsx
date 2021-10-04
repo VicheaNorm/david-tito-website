@@ -1,5 +1,5 @@
 import Head from "next/head";
-
+import Fade from 'react-reveal/Fade';
 import ContactImage from "../component/Contact-Image";
 import Work from "../component/Work";
 import ContactUs from "../component/Contact-us";
@@ -23,6 +23,7 @@ export default function Home() {
       </Head>
 
       <main className="">
+      <Fade bottom>
         <div className="">
           <div className="" id="top">
             <ContactImage />
@@ -33,6 +34,7 @@ export default function Home() {
             <Feature />
           </div>
         </div>
+        </Fade>
       </main>
     </Fragment>
   );

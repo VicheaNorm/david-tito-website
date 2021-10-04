@@ -5,16 +5,13 @@ import React from "react";
 import Link from "next/link";
 import Feature from "../../component/Feature/Feature";
 
-
-
-const indexCreativePage = () => {
-  const data = [
-    { linkURL: "baelvxWBj20" },
-    { linkURL: "6NmO3try_m8" },
-    
-  ];
-  return (
-    <>
+export default function index() {
+    const data = [
+        
+        { linkURL: "8CFreBPii1Y" },
+      ];
+    return (
+        <>
       <Head>
         <title>Short Film</title>
         <meta name="description" content="Short Film" />
@@ -50,10 +47,7 @@ const indexCreativePage = () => {
           ))}
         </div>
       </div>
-      
       <Feature />
     </>
-  );
-};
-
-export default indexCreativePage;
+    )
+}

@@ -1,5 +1,5 @@
 import React from "react";
-
+import Fade from 'react-reveal/Fade';
 import LinkTo from "next/link";
 import { motion } from "framer-motion";
 import { Card } from "antd";
@@ -35,9 +35,17 @@ const Work = () => {
       imageURL: "4h33qg29g",
       text: "Fingerstache flexitarian street art 8-bit waistcoat.Distillery hexagon disrupt edison bulbche.",
     },
+    
+    {
+      link: "/redpot",
+      title: "Red Pot short film for Festival",
+      imageURL: "rkmv9b42r",
+      text: "Fingerstache flexitarian street art 8-bit waistcoat.Distillery hexagon disrupt edison bulbche.",
+    },
   ];
   return (
     <section className="container mx-auto justify-center text-gray-600 body-font sm:pt-20">
+      <Fade bottom>
       <div className="px-2 py-4 ">
         <div className="flex flex-wrap w-full mb-0">
           <div className="lg:w-1/2 w-full mb-6 lg:mb-0">
@@ -70,7 +78,7 @@ const Work = () => {
                       }
                       alt="content"
                     />
-                    <h2 className="text-lg text-gray-400 font-medium title-font mb-2">
+                    <h2 className="text-lg text-gray-400 font-medium title-font mb-2 uppercase  ">
                       {datas.title}
                     </h2>
                     {/* <p className="leading-relaxed text-base">{datas.text}</p> */}
@@ -81,6 +89,7 @@ const Work = () => {
           ))}
         </div>
       </div>
+      </Fade>
     </section>
   );
 };
